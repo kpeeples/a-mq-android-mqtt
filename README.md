@@ -24,8 +24,9 @@ The only updates to the activemq.xml file that are required are:
   <transportConnector name="openwire" uri="tcp://0.0.0.0:61616"/>  
   <transportConnector name="mqtt" uri="mqtt+nio://0.0.0.0:1883"/>  
 </transportConnectors> 
-```xml
+```
 2. To enable security we just use the SimpleAuthenticationPlugin.
+```xml
 <plugins>
    <simpleAuthenticationPlugin>
       <users>
@@ -35,6 +36,7 @@ The only updates to the activemq.xml file that are required are:
       </users>
    </simpleAuthenticationPlugin>
 </plugins>
+```
 
 The main code in the Android app is in the MQTTActivity.java file in the org.example.mqtt package.  The android app UI is in the main.xml and can be seen in the graphical layout.
 
@@ -58,11 +60,11 @@ Steps  to build and run the demo
 
 References:
 
-[1] http://mqtt.org/
-[2] https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=mqtt
-[3] https://www.oasis-open.org/committees/download.php/49205/MQTT-OASIS-Webinar.pdf 
-[4] https://github.com/fusesource/mqtt-client
-[5] http://java.dzone.com/articles/android-mqtt-activemq
-[6] https://github.com/jsherman1/android-mqtt-demo.git
-[7] https://github.com/eschabell/jboss-rock-star-template
-[8] https://www.jboss.org/products/amq.html
+[1] http://mqtt.org/   
+[2] https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=mqtt   
+[3] https://www.oasis-open.org/committees/download.php/49205/MQTT-OASIS-Webinar.pdf    
+[4] https://github.com/fusesource/mqtt-client   
+[5] http://java.dzone.com/articles/android-mqtt-activemq   
+[6] https://github.com/jsherman1/android-mqtt-demo.git   
+[7] https://github.com/eschabell/jboss-rock-star-template   
+[8] https://www.jboss.org/products/amq.html   
