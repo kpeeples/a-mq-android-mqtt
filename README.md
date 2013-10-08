@@ -19,10 +19,12 @@ The demonstration includes code from the Red Hat JBoss Fuse MQTT Client library 
 
 The only updates to the activemq.xml file that are required are:
 1. The transport connector for mqtt.  The standard port is 1883.
+```xml
 <transportConnectors>  
   <transportConnector name="openwire" uri="tcp://0.0.0.0:61616"/>  
   <transportConnector name="mqtt" uri="mqtt+nio://0.0.0.0:1883"/>  
 </transportConnectors> 
+```xml
 2. To enable security we just use the SimpleAuthenticationPlugin.
 <plugins>
    <simpleAuthenticationPlugin>
