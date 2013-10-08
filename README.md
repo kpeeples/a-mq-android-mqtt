@@ -25,17 +25,16 @@ The only updates to the activemq.xml file that are required are:
   <transportConnector name="mqtt" uri="mqtt+nio://0.0.0.0:1883"/>  
 </transportConnectors> 
 ```
-  
 2. To enable security we just use the SimpleAuthenticationPlugin.  
 ```xml
 <plugins>  
-   <simpleAuthenticationPlugin>  
-      <users>  
-         <authenticationUser username="system" password="manager" groups="users,admins"/>  
-         <authenticationUser username="user" password="password" groups="users"/>  
-         <authenticationUser username="guest" password="password" groups="guests"/>  
-      </users>  
-   </simpleAuthenticationPlugin>  
+  <simpleAuthenticationPlugin>  
+    <users>  
+      <authenticationUser username="system" password="manager" groups="users,admins"/>  
+      <authenticationUser username="user" password="password" groups="users"/>  
+      <authenticationUser username="guest" password="password" groups="guests"/>  
+    </users>  
+  </simpleAuthenticationPlugin>  
 </plugins>  
 ```
   
