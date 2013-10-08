@@ -47,7 +47,7 @@ Part 2 - The demo
 
 Steps  to build and run the demo
 
-1. Download the code from github at
+1. Download the code from github at https://github.com/kpeeples/a-mq-android-mqtt
 2. Download Red Hat JBoss A-MQ from https://www.jboss.org/products/amq.html and place in the installs directory.
 3. Download the Android Bundle from http://developer.android.com/sdk/index.html and unzip.
 4. Download and start JBoss Developer Studio 7 or the Fuse IDE.
