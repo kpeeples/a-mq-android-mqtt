@@ -18,7 +18,7 @@ What supporting projects are included in the demonstration?
 The demonstration includes code from the Red Hat JBoss Fuse MQTT Client library that Hiram Chirino started.  The library supports Blocking, Future and Callback/Continuation Passing Based APIs.  The source is located in the references. [4]  I included the library in the project.  I also utilized the code from Jason Sherman for the sample Android Application. [5] [6]  In addition I utilized Eric Schabell's JBoss Rock Star template for a quick build of the demonstration.  [7]
 
 The only updates to the activemq.xml file that are required are:  
-1. The transport connector for mqtt.  The standard port is 1883.  
+-The transport connector for mqtt.  The standard port is 1883.  
 
 ```xml
 <transportConnectors>  
@@ -27,7 +27,7 @@ The only updates to the activemq.xml file that are required are:
 </transportConnectors> 
 ```
 
-2. To enable security we just use the SimpleAuthenticationPlugin.  
+-To enable security we just use the SimpleAuthenticationPlugin.  
 
 ```xml
 <plugins>  
