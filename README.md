@@ -25,19 +25,20 @@ The only updates to the activemq.xml file that are required are:
   <transportConnector name="mqtt" uri="mqtt+nio://0.0.0.0:1883"/>  
 </transportConnectors> 
 ```
+  
 2. To enable security we just use the SimpleAuthenticationPlugin.
 ```xml
-<plugins>
-   <simpleAuthenticationPlugin>
-      <users>
-         <authenticationUser username="system" password="manager" groups="users,admins"/>
-         <authenticationUser username="user" password="password" groups="users"/>
-         <authenticationUser username="guest" password="password" groups="guests"/>
-      </users>
-   </simpleAuthenticationPlugin>
-</plugins>
+<plugins>  
+   <simpleAuthenticationPlugin>  
+      <users>  
+         <authenticationUser username="system" password="manager" groups="users,admins"/>  
+         <authenticationUser username="user" password="password" groups="users"/>  
+         <authenticationUser username="guest" password="password" groups="guests"/>  
+      </users>  
+   </simpleAuthenticationPlugin>  
+</plugins>  
 ```
-
+  
 The main code in the Android app is in the MQTTActivity.java file in the org.example.mqtt package.  The android app UI is in the main.xml and can be seen in the graphical layout.
 
 Part 2 - The demo
